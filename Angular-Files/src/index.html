@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World Map</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--<link rel="stylesheet" type="text/css" href="Angular-Files/src/styles.css">-->
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  -->
+</head>
+
+<body id="body">
+
+<app-root>
+
+  <div class="container">
+
+    <div class="column-left">
+
+      <h2>Country Information</h2>
+      <p>Select your desired country from the map or enter its 2 letter code below to see its information.</p>
+
+      <!-- User field for entering their 2 digit country code and searching -->
+      <input type="text" id="usercode" name="usercode" placeholder="Enter 2 letter country code">
+      <p id="errormsg"></p>
+      <button type="button" id="button">SEARCH</button>
+
+      <!-- Section to display country results -->
+      <p class="ptitle">Country Name:</p>
+      <p id="countryname"></p>
+
+      <p class="ptitle">Country Capital:</p>
+      <p id="capital"></p>
+
+      <p class="ptitle">Country Region:</p>
+      <p id="region"></p>
+
+      <p class="ptitle">Country Income Level:</p>
+      <p id="incomelevel"></p>
+
+      <p class="ptitle">2 Digit Country Code:</p>
+      <p id="countrycode"></p>
+
+      <p class="ptitle">Latitude:</p>
+      <p id="latitude"></p>
+
+      <p class="ptitle">Longitude: </p>
+      <p id="longitude"></p>
+
+    </div>
+
+    <!--Display svg map -->
+
+    <div id="map-container" class="column-right">
+    </div>
+
+
+  </div>
+
+  <div id ="name">
+    <p id="namep">Name</p>
+  </div>
+
+  <!-- import js file for functionality -->
+  <!--<script src="Angular-Files/src/script.js"></script>-->
+  </app-root>
+</body>
+
+</html>

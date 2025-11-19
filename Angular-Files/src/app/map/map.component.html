@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="column-left">
+    <h2>Country Information</h2>
+    <p class="instructions">
+      Select your desired country from the map or enter its 2-letter code below
+      to see its information.
+    </p>
+
+    <!-- User field for entering their 2-digit country code and searching -->
+    <input
+      type="text"
+      id="usercode"
+      name="usercode"
+      placeholder="Enter 2-letter country code"
+    />
+    <p id="errormsg"></p>
+    <button type="button" id="button">SEARCH</button>
+
+    <!-- Section to display country results -->
+    <p class="ptitle">Country Name:</p>
+    <p id="countryname"></p>
+
+    <p class="ptitle">Country Capital:</p>
+    <p id="capital"></p>
+
+    <p class="ptitle">Country Region:</p>
+    <p id="region"></p>
+
+    <p class="ptitle">Country Income Level:</p>
+    <p id="incomelevel"></p>
+
+    <p class="ptitle">2-Digit Country Code:</p>
+    <p id="countrycode"></p>
+
+    <p class="ptitle">Latitude:</p>
+    <p id="latitude"></p>
+
+    <p class="ptitle">Longitude:</p>
+    <p id="longitude"></p>
+  </div>
+
+  <!-- Display SVG map -->
+  <div id="map-container" class="column-right"></div>
+</div>
+
+<!-- Tooltip name box -->
+<div id="name">
+  <p id="namep">Name</p>
+</div>

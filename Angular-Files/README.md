@@ -2,14 +2,10 @@
 012474805
 
 # Angular Version:
-Angular CLI: 20.3.8
+Angular CLI: 20.3.8 
 Node: 20.19.5
 Package Manager: npm 10.8.2
 OS: darwin arm64
-
-# To Run The Application
-After downloading the project run terminal at the folder named Angular-Files and type ng serve then hit enter. This will allow you to run the project in your browser at http://localhost:4200/ or the provided link from your terminal.
-
 
 # AngularFiles
 

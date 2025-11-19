@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.container {
+  display: flex;
+  /*grid-template-columns: 30% 70%;*/
+  height: 100vh; /* Make sure columns fill viewport */
+  gap: 0.2rem;
+}
+
+/* Left column (info panel) */
+.column-left {
+  background-color: #eee;
+  padding: 1rem;
+  overflow-y: auto; /* Scroll if content is tall */
+  width: 30%;
+}
+
+/* Right column (map) */
+.column-right {
+  background-color: #ddd;
+  padding: 1rem;
+  position: relative; /* Required for absolute tooltip positioning */
+  overflow: hidden;
+  flex: 1;
+}
+
+/* SVG sizing */
+ svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Tooltip */
+#name {
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none; /* Prevent tooltip from blocking hover/clicks */
+  z-index: 10;
+}
+
+/* Change map color */
+
+/* SVG paths */
+svg path {
+  cursor: pointer;
+  transition: fill 0.2s; /* Smooth hover transition */
+}
+
+/* Optional: hover color for CSS fallback */
+svg path:hover {
+  fill: lightblue;
+}
+
+/* Buttons and input */
+input, button {
+  margin: 0.5rem 0;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/* Info paragraph spacing */
+p {
+  padding: 5px;
+  font-size: 18px;
+}
+.ptitle{
+  margin-top: .5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #212121;
+  padding: 5px;
+}
+
+p.instructions{
+  font-size: 14px;
+}
+
+#errormsg {
+  color: #ca3a11;
+  font-size: 12px;
+}
+
