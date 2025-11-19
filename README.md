@@ -1,6 +1,3 @@
-# Student ID:
-012474805
-
 # Angular Version:
 Angular CLI: 20.3.8
 Node: 20.19.5
